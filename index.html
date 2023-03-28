@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./Assets/main.css">
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="snow">
+        <canvas></canvas>
+    </div>
+    <!-- Header -->
+    <header>
+        <a class="logo" href="./index.html">
+            Travel
+        </a>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-list">
+                    <a class="menu-link" href="#home">Home</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#offers">Offers</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#services">Services</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#about">About us</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#book-tour" id="delay" class="btn-book">
+            Book
+        </a>
+    </header>
+    <!-- main -->
+    <div class="travel">
+        <!-- home page -->
+        <div class="travel-item home-page" id="home">
+            <img src="./media/bg-page/home-page.svg" alt="" class="bg-home-page">
+            <div class="container-home">
+                <div class="site-content">
+                    <div data-aos="fade-right" class="img-site">
+                        <img class="img-site-item" src="./media/img/img-site-home/ae.jpg" alt="">
+                        <img class="img-site-item" src="./media/img/img-site-home/as.jpg" alt="">
+                        <img class="img-site-item" src="./media/img/img-site-home/explore-img3.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="300" class="text-site">
+                        <h4 class="heading-4">BEGIN THE JOURNEY</h4>
+                        <h2 class="heading-2">Popular <br> Places Arround <br> The World </h2>
+                        <p class="lorem-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere, <br>
+                            optio sunt debitis tempore accusamus? Ex tempore molestiae <br>
+                            aspernatur corrupti, iure est <br>
+                            consequuntur, dolorum eveniet doloribus, blanditiis minus magni quia.
+                        </p>
+                        <button class="btn-explore">
+                            Explore !
+                        </button>
+                    </div>
+                </div>
+
+                <section data-aos="fade-right" id="book-tour">
+                    <h2 class="landing-text">Book tour</h2>
+                    <form action="" class="book-tour">
+
+                        <div class="column-1">
+                            <div class="name">
+                                <label for="name">Name:</label><br>
+                                <input placeholder="Enter your name" class="name-input" type="text">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email: </label><br>
+                                <input placeholder="Enter your email" class="email-input" type="email">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone: </label><br>
+                                <input placeholder="Enter your phone" class="phone-input" type="text">
+                            </div>
+                        </div>
+
+                        <div class="column-2">
+                            <div class="adults">
+                                <label for="adult">Adults: </label><br>
+                                <input class="number-input" step="1" min="0" max="20" type="number">
+                            </div>
+                            <div class="children">
+                                <label for="children">Children: </label><br>
+                                <input class="number-input" step="1" min="0" max="20" type="number">
+                            </div>
+                            <div class="check">
+                                <div class="check-in">
+                                    <label for="check-in">Check in:</label>
+                                    <input class="check-input" type="date">
+                                </div>
+                                <div class="check-out">
+                                    <label for="check-in">Check out: </label>
+                                    <input type="date" class="check-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-3">
+                            <div class="oject">
+                                <label for="oject-text">Anything Else ?</label><br>
+                                <textarea placeholder="Tell us anything else that might be important." name="opject"
+                                    id="" cols="35" rows="10"></textarea>
+                            </div>
+
+                            <div class="btnAndSearch">
+                                <input class="btn-book-form" type="submit" value="Book now!">
+                                <div class="search">
+                                    <img src="./media/icon-svg/search-address-book-svgrepo-com.svg" alt="">
+                                    <input class="" placeholder="search" type="search">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <div class="diem-den">
+                    <h2 class="landing-text"> Featured Destination</h2>
+
+                    <div class="flex">
+                        <div data-aos="fade-right" class="diem-den-item">
+                            <div class="diem-den-img">
+                                <img src="./media/img/destination-4.jpg.webp" alt="">
+                            </div>
+                            <div class="diem-den-title">
+                                <div class="row2">
+                                    <h3>Lion, Singapore</h3>
+                                    <div class="content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        debitis consequuntur veritatis quos expedita neque
+                                    </div>
+                                </div>
+                                <div class="down-btn">
+                                    <img src="./media/icon-svg/down-alt-circle-svgrepo-com.svg" alt="" class="down">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-right" data-aos-delay="200" class="diem-den-item">
+                            <div class="diem-den-img">
+                                <img src="./media/img/destination-5.jpg.webp" alt="">
+                            </div>
+                            <div class="diem-den-title">
+                                <div class="row2">
+                                    <h3>Australia</h3>
+                                    <div class="content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        debitis consequuntur veritatis quos expedita neque
+                                    </div>
+                                </div>
+                                <div class="down-btn">
+                                    <img src="./media/icon-svg/down-alt-circle-svgrepo-com.svg" alt="" class="down">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-right" data-aos-delay="400" class="diem-den-item">
+                            <div class="diem-den-img">
+                                <img src="./media/img/destination-1.jpg.webp" alt="">
+                            </div>
+                            <div class="diem-den-title">
+                                <div class="row2">
+                                    <h3>Paris, Italy</h3>
+                                    <div class="content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        debitis consequuntur veritatis quos expedita neque
+                                    </div>
+                                </div>
+                                <div class="down-btn">
+                                    <img src="./media/icon-svg/down-alt-circle-svgrepo-com.svg" alt="" class="down">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-tour">
+                    <div data-aos="fade-right" class="column-1">
+                        <h2>Best <br>
+                            Tour Plans <br>
+                            Recently</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                            Nemo voluptatibus neque nostrum ut soluta consequatur unde <br>
+                            cumque perferendis repudiandae aliquid explicabo, tempore <br>
+                            excepturi facilis provident ab iste. <br>
+                            Fugit, corporis mollitia.
+                        </p>
+                        <button class="btn-best-tour">
+                            Browse All Package
+                        </button>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-delay="200" class="column-2">
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/img-site-home/explore-img3.jpg" alt="">
+                        </div>
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/ab.jpg" alt="">
+                        </div>
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/ae.jpg" alt="">
+                        </div>
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/ag.jpg" alt="">
+                        </div>
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/as.jpg" alt="">
+                        </div>
+                        <div class="layout-item">
+                            <img class="layout-image" src="./media/img/ax.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200" class="begin-advanture">
+                    <div class="star-left">
+                        <img height="150px" src="./media/decor-svg/star_left.3b139152.svg" alt="">
+                    </div>
+                    <h1 class="landing-text">Begin your Advanturous journey here !</h1>
+                    <button class="btn-get-started fa-solid">Get Started</button>
+                    <div class="star-right">
+                        <img height="150px" src="./media/decor-svg/star_right.b8295d3b.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="why-travel">
+                    <h1 data-aos="fade-down-right" class="landing-text">Why do you choose us?</h1>
+                    <div data-aos="fade-right" data-aos-delay="0" class="skill">
+                        <div class="icon-container">
+                            <img class="star-decor" height="50px" src="./media/decor-svg/star_right.b8295d3b.svg"
+                                alt="">
+                            <img src="./media/icon-svg/basic-flight-outline-svgrepo-com.svg" alt="" class="icon">
+                        </div>
+                        <h1>Book tour</h1>
+                        <p>
+                            Easy & fast with only 3 steps
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500" class="skill">
+                        <div class="icon-container">
+                            <img class="star-decor" height="50px" src="./media/decor-svg/star_left.3b139152.svg" alt="">
+                            <img src="./media/icon-svg/price-svgrepo-com.svg" alt="" class="icon">
+                            <img class="star-decor right" height="50px" src="./media/decor-svg/star_left.3b139152.svg"
+                                alt="">
+                        </div>
+                        <h1>Price</h1>
+                        <p>
+                            Always have the best price
+                        </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="0" class="skill">
+                        <div class="icon-container">
+                            <img class="star-decor last" height="50px" src="./media/decor-svg/star_left.3b139152.svg"
+                                alt="">
+                            <img class="icon" src="./media/icon-svg/quality-supervision-svgrepo-com.svg" alt="">
+                        </div>
+                        <h1>Products & Services</h1>
+                        <p>
+                            Diversity – Quality – Safety
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Offers page-->
+        <div id="offers" class="travel-item offers-page">
+            <img src="./media/bg-page/offers-full-page.svg" alt="" class="bg-offer-page">
+            <div class="container-offers">
+
+                <div class="outer-space">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="landing-text">
+                        <h2 landing-text>Outer space tours</h2>
+                        <h4 landing-text-h4>Looking at the Earth</h4>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img class="img-item" height="200px" src="./media/img/1450484.jpg" alt="">
+                            <div class="content-item">
+                                <img class="star-right" src="./media/decor-svg/star_right.b8295d3b.svg" alt="">
+                                <img class="star-left" src="./media/decor-svg/star_left.3b139152.svg" alt="">
+                                <h3 class="title-item">Explore the Moon</h3>
+                                <p>Seriously, straight up, just blast off into outer space today</p>
+                                <button class="btn-explore-outer">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-item" height="200px" src="./media/img/Sao-Hoa1.jpeg" alt="">
+                            <div class="content-item">
+                                <img class="star-right" src="./media/decor-svg/star_right.b8295d3b.svg" alt="">
+                                <img class="star-left" src="./media/decor-svg/star_left.3b139152.svg" alt="">
+                                <h3 class="title-item">Explore the Mars</h3>
+                                <p>Seriously, straight up, just blast off into outer space today</p>
+                                <button class="btn-explore-outer">Explore</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-item" height="200px" src="./media/img/photo-1-16602867684241555309312.webp"
+                                alt="">
+                            <div class="content-item">
+                                <img class="star-right" src="./media/decor-svg/star_right.b8295d3b.svg" alt="">
+                                <img class="star-left" src="./media/decor-svg/star_left.3b139152.svg" alt="">
+                                <h3 class="title-item">See the earth</h3>
+                                <p>Seriously, straight up, just blast off into outer space today</p>
+                                <button class="btn-explore-outer">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button class="btn-show">Show more</button>
+                    </div>
+                </div>
+
+                <div class="special-tour">
+                    <h2 class="landing-text-h2">Special tours</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./media/img/tf_220919102616_939244.jpg" alt="" class="img-item">
+                            <div class="content-item  important end">
+                                <h3 class="title-item">Singapore - Indonesia - Malaysia </h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore cupiditate</p>
+
+                                <div class="btn-item">
+                                    <button class="btn-book">Book now !</button>
+                                    <button class="btn-view-detail">View detail</button>
+                                </div>
+                                <div class="seats">
+                                    <p class="number-of-seat seat-1">Number of seats available</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="content-item important">
+                                <h3 class="title-item">Bờ Đông Hoa Kỳ: New York - Philadelphia - Washington DC | Mùa Hoa
+                                    Anh Đào</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore cupiditate</p>
+                                <div class="btn-item">
+                                    <button class="btn-book">Book now !</button>
+                                    <button class="btn-view-detail">View detail</button>
+                                </div>
+                                <div class="seats">
+                                    <p class="number-of-seat seat-2">Number of seats available</p>
+                                </div>
+                            </div>
+                            <img src="./media/img/tf_220315043956_250317.jpg" alt="" class="img-item">
+                        </div>
+
+                        <div class="item">
+                            <img src="./media/img/tf_220705120848_366745.jpg" alt="" class="img-item">
+                            <div class="content-item end">
+                                <h3 class="title-item">Hoa Kỳ : Houston - San Antonio - Dallas - Fort Worth - Houston:
+                                    Xứ Sở Những Chàng Cao Bồi</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore cupiditate</p>
+                                <div class="btn-item">
+                                    <button class="btn-book">Book now !</button>
+                                    <button class="btn-view-detail">View detail</button>
+                                </div>
+                                <div class="seats">
+                                    <p class="number-of-seat seat-3">Number of seats available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="content-item">
+                                <h3 class="title-item">Thái Lan: Phuket - Vịnh Phang Nga - 1 ngày tự do (Khách sạn 4
+                                    sao) </h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore cupiditate</p>
+                                <div class="btn-item">
+                                    <button class="btn-book">Book now !</button>
+                                    <button class="btn-view-detail">View detail</button>
+                                </div>
+                                <div class="seats">
+                                    <p class="number-of-seat seat-4">Number of seats available</p>
+                                </div>
+                            </div>
+                            <img src="./media/img/tf_220509030135_203362.jpg" alt="" class="img-item">
+                        </div>
+
+                        <div class="item">
+                            <img src="./media/img/tf_230117044034_375443.jpg" alt="" class="img-item">
+                            <div class="content-item end">
+                                <h3 class="title-item">Bờ Tây Hoa Kỳ: Los Angeles - Hollywood - Las Vegas - Grand Canyon
+                                    - Universal Studio ( Tặng vé vọng cảnh Skywalk )</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore cupiditate</p>
+                                <div class="btn-item">
+                                    <button class="btn-book">Book now !</button>
+                                    <button class="btn-view-detail">View detail</button>
+                                </div>
+                                <div class="seats">
+                                    <p class="number-of-seat seat-5">Number of seats available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-show-more">Show more</button>
+                    </div>
+                </div>
+
+                <div class="tours-in-country">
+                    <h2 class="landing-text-h2">Tours in country</h2>
+                    <div class="layout">
+                        <div class="item">
+                            <img src="./media/img/0a3c326f-cedf-4cf9-ada2-71f7517d0a09.webp" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/4-Cau-Rong-Han-Cau-Thuan-Phuoc-6049-1654169673.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/caihinh.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/tfd_220621115410_350590.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/tong-hop-cac-phuong-tien-di-lai-o-can-tho-duoc-ua-chuong-nhat-01-1649689650.jpg"
+                                alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/hinh-anh-hue-1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/1311sapa.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./media/img/vinh_ha_long.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Services page-->
+        <div id="services" class="travel-item services-page">
+            <img src="./media/bg-page/services-full-page.svg" alt="" class="bg-services-page">
+            <div class="container-services">
+                <!-- <img src="./Assets/style/bg-img/offers-full-page.svg" alt="" class="bg-services-page"> -->
+                <div class="container-services">
+                    <div class="title">
+                        <h1 class="landing-text-h1">Our Services</h1>
+                        <h4 class="landing-text-h4">What I can do for youu</h4>
+                    </div>
+                    <div class="layout">
+                        <div class="row-1">
+                            <div class="expeat-guides">
+                                <span class="view-detail"></span>
+                                <h2>Expeart guides</h2>
+                                <p>With the help of our expert guides, you’ll be able to really get under the skin of
+                                    your destination. Experience life as a local and return with an authentic
+                                    understanding of a new culture.</p>
+                            </div>
+                            <div class="helpline">
+                                <span class="view-detail"></span>
+                                <h2>24 hour helpline</h2>
+                                <p>Even when you’ve planned a holiday down to the finest detail, things can still go
+                                    wrong. Not to worry, we have you covered with our 24-hour helpline. So if you’ve
+                                    missed your plane or lost your luggage, we’re only one call away.</p>
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <div class="our-website">
+                                <span class="view-detail"></span>
+                                <h2>Our website</h2>
+                                <p>With our handy website, you can keep track of all your important documents in one
+                                    paperless place and receive live updates on your trip.</p>
+                            </div>
+                            <div class="flights">
+                                <span class="view-detail"></span>
+                                <h2>Flights Reservations</h2>
+                                <p>Wherever you need to be. We offer price cut airfares to destinations worldwide,
+                                    giving you greater freedom to choose your preferred airline as well as more
+                                    departure and arrival times to suit your plans. We provide cheaper flights with
+                                    fewer stops and we work with low-cost carriers, charter carriers, and main worldwide
+                                    airlines, to offer everything from economy airfare deals to business class and first
+                                    class travel.</p>
+                            </div>
+                        </div>
+                        <div class="row-3">
+                            <div class="tour-sightseeing">
+                                <span class="view-detail"></span>
+                                <h2>Tours & Sightseeing</h2>
+                                <p>Our wide range of travel activities can meet the varied interests of travelers. Below
+                                    are samples of the kinds of products we offer. City Tours & Sightseeing, City Pass &
+                                    Skip the Line Tickets, Hop On Hop Off Tours, Day Trips & Excursions outside the
+                                    city, Private Tours, Night Tours, Shore Excursions, Cruises, Mini & Dinner Cruises,
+                                    and many more !!!</p>
+                            </div>
+                            <div class="hotel-resorts">
+                                <span class="view-detail"></span>
+                                <h2>Hotels & resorts</h2>
+                                <p>Travel offers you more than 1000000 hotel and resort all over the world with a great
+                                    range of prices and locations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About page-->
+        <div id="about" class="travel-item about-page">
+            <img src="./media/bg-page/about-full-page.svg" alt="" class="bg-about-page">
+            <div class="container-about">
+                <div class="container-about">
+
+                    <div class="our-story">
+                        <h1>take a look at our story</h1>
+                    </div>
+
+                    <div class="decor-circle">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <div class="about-we-self">
+                        <div class="profile-img">
+                            <img src="./media/img/059c822fccba767510b9beba3bd0ed81.jpg" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-heading">
+                                <h1>About</h1>
+                                <h6>MySelf</h6>
+                            </div>
+                            <p>
+                                Make Your Tour <br>
+                                Memorable and Safe With <br>
+                                Us
+                            </p>
+                            <div class="social-media">
+                                <h3>Follow us</h3>
+                                <ul class="nav-list">
+                                    <li>
+                                        <a href="https://twitter.com/?lang=vi" class="icon-link" target="_blank">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/" class="icon-link" target="_blank">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://dribbble.com/" class="icon-link" target="_blank">
+                                            <i class="fab fa-dribbble-square"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio">
+
+                        <div class="portfolio-heading">
+                            <h1>Portfolio</h1>
+                            <h6>View some of my recent work</h6>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <div class="portfolio-img left">
+                                <img src="./media/img/portitem2.jpeg" alt="">
+                            </div>
+                            <div class="portfolio-description">
+                                <h6>Travel</h6>
+                                <h1>Services Development</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
+                                    Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.
+
+                                </p>
+                                <a href="" class="view-details">View detail</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+
+                            <div class="portfolio-description">
+                                <h6>Travel</h6>
+                                <h1>Product strategy</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
+                                    Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.
+
+                                </p>
+                                <a href="" class="view-details">View detail</a>
+                            </div>
+
+                            <div class="portfolio-img right">
+                                <img src="./media/img/portitem3.jpeg" alt="">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="experience">
+
+                        <div class="experience-heading">
+                            <h1>Fun facts about our Agency</h1>
+                            <h6>Take a look</h6>
+                        </div>
+
+                        <div class="timeline">
+                            <ul>
+                                <li class="date" data-date="2021">
+                                    <h1>100.000.000 Trips</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa error quod
+                                        doloremque repellat nam laboriosam atque in unde quia,
+                                        <br> pariatur reiciendis deserunt quae debitis, alias nihil nostrum illo ipsam!
+                                    </p>
+                                </li>
+                                <li class="date" data-date="2022">
+                                    <h1>Exploring outer space</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa error quod
+                                        doloremque repellat nam laboriosam atque in unde quia,
+                                        <br> pariatur reiciendis deserunt quae debitis, alias nihil nostrum illo ipsam!
+                                    </p>
+                                </li>
+                                <li class="date" data-date="2023">
+                                    <h1>213 Islands Visited</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa error quod
+                                        doloremque repellat nam laboriosam atque in unde quia,
+                                        <br> pariatur reiciendis deserunt quae debitis, alias nihil nostrum illo ipsam!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Contact page-->
+        <div id="contact" class="travel-item contact-page">
+            <img src="./media/bg-page/contact-full-page.svg" alt="" class="bg-contact-page">
+            <div class="container-contact">
+                <div class="title">
+                    <h1 class="landing-text-h1">Contact us</h1>
+                    <h4 class="landing-text-h4">Let's Work Together</h4>
+                </div>
+
+                <div class="layout">
+                    <form action="" class="contact-form">
+                        <div class="column">
+                            <div class="first-name">
+                                <label for="">First name: </label> <br>
+                                <input placeholder="Enter your first name" required type="text"
+                                    class="first-name-input">
+                            </div>
+                            <div class="last-name">
+                                <label for="">Last name: </label> <br>
+                                <input placeholder="Enter your last name" required type="text" class="last-name-input">
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <label for="">Phone number: </label> <br>
+                            <input placeholder="Enter your phone number" required type="text" class="phone-input">
+                        </div>
+                        <div class="email">
+                            <label for="">Email: </label> <br>
+                            <input placeholder="Enter your email" type="email" name="" id="" class="email-input">
+                        </div>
+                        <div class="text-box">
+                            <label for="">Subjeck: </label> <br>
+                            <textarea name="" id="" cols="10" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="submit-input">
+                    </form>
+                    <div class="information-contact">
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Location: <span>VietNam, CanTho, NinhKieu.</span></h4>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <h4>Contact: <span>0652906529</span></h4>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email: <span>thanhlcpc06529@fpt.edu.vn</span></h4>
+                            </li>
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                                <h4>Facebook: <span>www.facebook.com/thanhdanoroi</span></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+
+        <div class="LOGO">
+            <a class="logo logo-footer" href="index.html">
+                Travel
+            </a>
+        </div>
+        <div class="container-footer">
+            <div class="star-left">
+                <img height="100px" src="./Assets/images/star_left.3b139152.svg" alt="">
+            </div>
+            <div class="star-right">
+                <img height="170px" src="./Assets/images/star_right.b8295d3b.svg" alt="">
+            </div>
+            <ul class="item-footer">
+                <li class="column-footer">
+                    <h2>Travel</h2>
+                    <ul class="content">
+                        <li>VietNam, CanThom, NinhKieu</li>
+                        <li>Contact 0652906529</li>
+                        <li>Thành: 0652.9065.29</li>
+                        <li>Email: thanhlcpc06529</li>
+                    </ul>
+                </li>
+                <li class="column-footer">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Offers </a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="column-footer">
+                    <h2>Information</h2>
+                    <ul>
+                        <li>
+                            <a href="">Travel magazines</a>
+                        </li>
+                        <li>
+                            <a href="">Travel Guide</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Sitemap</a>
+                        </li>
+                        <li>
+                            <a href="">Frequently asked questions</a>
+                        </li>
+                        <li>
+                            <a href="">Private Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Term of use</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="column-footer">
+                    <h2>Follow us</h2>
+                    <ul class="icon-follow">
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube"></i>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copy-right">
+            Copyright ©2023 All rights reserved | made by Th@2.dev
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,213.3C420,213,480,235,540,218.7C600,203,660,149,720,144C780,139,840,181,900,181.3C960,181,1020,139,1080,144C1140,149,1200,203,1260,208C1320,213,1380,171,1410,149.3L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </footer>
+    <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!--jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Data aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--Snow js-->
+    <script src="./custom/snow.js"></script>
+    <!--Ionicon cdn-->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Main js-->
+    <script src="./main.js"></script>
+</body>
+
+</html>
